@@ -19,6 +19,7 @@ async function compileScript() {
 
   console.log("Compilation was successful");
 
+  //Save to a file compiled
   const hexArtifiact = "build/main.compiled.json";
   fs.writeFileSync(
     hexArtifiact,
