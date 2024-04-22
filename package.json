@@ -4,13 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "onchain-test": "TESTNET=true ts-node ./scripts/onchainTest.ts",
-    "onchain-test:mainnet": "TESTNET=true ts-node ./scripts/onchainTest.ts",
-    "deploy": "pnpm compile && TESTNET=true ts-node ./scripts/deploy.ts",
-    "deploy:mainnet": "pnpm compile && ts-node ./scripts/deploy.ts",
-    "test": "pnpm compile && pnpm jest",
-    "convert": "ts-node ./scripts/convertToFriendly.ts",
-    "compile": "ts-node ./scripts/compile.ts"
+    "test": "pnpm jest"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +13,7 @@
     "@orbs-network/ton-access": "^2.3.3",
     "@swc/core": "^1.4.16",
     "@ton-community/func-js": "^0.7.0",
+    "@ton/blueprint": "^0.19.1",
     "@ton/core": "^0.56.3",
     "@ton/sandbox": "^0.17.0",
     "@types/jest": "^29.5.12",
@@ -35,7 +30,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@ton/test-utils": "^0.4.2",
+    "@ton/test-utils": "^0.4.2", 
     "dotenv": "^16.4.5"
   }
 }
